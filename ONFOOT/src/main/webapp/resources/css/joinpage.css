@@ -1,0 +1,96 @@
+
+
+/* 유효성 검사 문구 */
+.id-check{
+	color: red;
+	font-weight: bold;
+	display:none;
+}
+.pw-check{
+	color: red;
+	font-weight: bold;
+	display:none;
+}
+.name-check{
+	color: red;
+	font-weight: bold;
+	display:none;
+}
+.addr-check{
+	color: red;
+	font-weight: bold;
+	display:none;
+}
+.email-check{
+	color: red;
+	font-weight: bold;
+	display:none;
+}
+.tel-check{
+	color: red;
+	font-weight: bold;
+	display:none;
+}
+
+/* 중복아이디 체크 */
+.id-input-re-1 {
+	color: green;
+	font-weight: bold;
+	display: none;
+}
+.id-input-re-2 {
+	color: red;
+	font-weight: bold;
+	display: none;
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+#joinBox {
+	width: 400px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.join-input-form-box {
+	border: 0px solid #ff0000;
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.join-input-form-box>span {
+	display: block;
+	text-align: left;
+	padding-top: 5px;
+	min-width: 65px;
+}
+
+.button-join-box {
+	margin: 10px 0;
+}
+
+#joinBoxTitle {
+	color: #000000;
+	font-weight: bold;
+	font-size: 85px;
+	text-transform: uppercase;
+	padding: 5px;
+	margin-bottom: 20px;
+	background: linear-gradient(to right, #270a09, #8ca6ce);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#join-inputBox {
+	margin: 10px;
+}
+
+#join-inputBox button {
+	padding: 3px 5px;
+}

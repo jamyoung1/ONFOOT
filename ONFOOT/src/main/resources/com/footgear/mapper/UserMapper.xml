@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.footgear.mapper.UserMapper">
+
+
+	<insert id="userJoin">
+		insert into user values
+		(#{userid},#{passwd},#{name},#{addr},#{phone},#{email})
+	</insert>
+	
+	<select id="idCheck" resultType="int">
+		select count(*) from user where userid = #{userid}
+	</select>
+	
+	<select id="userLogin" resultType="com.footgear.model.UserDTO">
+		<!-- select userid,name,addr,phone,email from user where
+		userid = #{userid} and passwd = #{passwd} -->
+		select userid,passwd,name,addr,phone,email from user where userid = #{userid}
+		
+	</select>
+
+</mapper>
