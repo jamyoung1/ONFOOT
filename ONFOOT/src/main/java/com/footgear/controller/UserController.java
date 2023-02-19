@@ -49,12 +49,12 @@ public class UserController {
 	@PostMapping("/join")
 	public String joinPost(UserDTO dto) throws Exception {
 		
-		String rawpw = "";			// 占쏙옙占쌘듸옙 占쏙옙
-		String encodepw = ""; 		// 占쏙옙占쌘듸옙 占쏙옙
+		String rawpw = "";			// 인코딩 전 비밀번호 
+		String encodepw = ""; 		// 인코딩 후 비밀번호
 		
-		rawpw = dto.getPasswd();				// 占쏙옙占쏙옙占쏙옙 get
-		encodepw = encoder.encode(rawpw);; 		// 占쏙옙占쌘듸옙
-		dto.setPasswd(encodepw);				// dto 占쏙옙체占쏙옙 占쌕쏙옙 占쏙옙占쏙옙
+		rawpw = dto.getPasswd();				// 비밀번호 데이터
+		encodepw = encoder.encode(rawpw);; 		// 비밀번호 인코딩
+		dto.setPasswd(encodepw);				// 인코딩 비밀번호 member 객체에 저장
 		
 		userservice.userJoin(dto);
 		
@@ -90,7 +90,7 @@ public class UserController {
 		String rawpw = "";
 		String encodepw = "";
 		
-		com.footgear.model.UserDTO userdto = userservice.userLogin(dto);
+		UserDTO userdto = userservice.userLogin(dto);
 		
 		if(userdto!=null) {  // 아이디 일치
 			rawpw = dto.getPasswd();         // 사용자 비밀번호

@@ -10,7 +10,7 @@
 <body class="text-center">
 	<div id="container">
 		<div id="joinBox">
-			<div id="joinBoxTitle">ONLOOK JOIN</div>
+			<div id="joinBoxTitle">ONFOOT JOIN</div>
 			<form id="join-form" method="post">
 				<div id="join-inputBox">
 					<div class="join-input-form-box">
