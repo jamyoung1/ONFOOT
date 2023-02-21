@@ -10,5 +10,5 @@ FOOTGEAR SHOPPINGMALL
   * JSP
   * JSTL
   * Jquery
-  * Security(v 5.4.2)
+  * Security(v5.4.2)
 
